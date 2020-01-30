@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+        <fragment
+            android:id="@+id/listFragment"
+            android:name="com.example.myaudiorecorder.SimpleListFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout="@android:layout/list_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="0.35"
+
+            >
+        </fragment>
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".view.MainActivity"
+    android:layout_weight="0.9"
+    >
+
+    <Button
+        android:id="@+id/record_button"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/ic_mic_none_black"
+        android:tag="@string/rec_stop"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/ic_save"
+      />
+</LinearLayout>
+</LinearLayout>

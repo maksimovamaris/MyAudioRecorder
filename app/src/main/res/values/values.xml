@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="background_key">color_background</string>
+    <string name="pref_colors_default_value">0</string>
+    <string-array name="pref_colors_data">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
